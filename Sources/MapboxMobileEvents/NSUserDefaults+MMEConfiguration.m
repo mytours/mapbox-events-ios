@@ -421,6 +421,8 @@ NS_ASSUME_NONNULL_BEGIN
 // MARK: - Location Collection
 
 - (BOOL)mme_isCollectionEnabled {
+    BOOL collectionEnabled = NO;
+    /*
     BOOL collectionEnabled = ![self boolForKey:MMECollectionDisabled];
     
 #if TARGET_OS_SIMULATOR
@@ -443,6 +445,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (NSBundle.mme_isExtension) {
         collectionEnabled = NO;
     }
+    */
 
     return collectionEnabled;
 }
